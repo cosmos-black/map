@@ -11,7 +11,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="SkyMap">
+<meta name="apple-mobile-web-app-title" content="Cosmos Map">
 <link rel="apple-touch-icon" href="icon-192.png">
 
 <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;600&family=Space+Mono:ital@0;1&display=swap" rel="stylesheet">
@@ -416,7 +416,7 @@
 </svg>
 
 <div id="hud-top">
-  <div class="logo">SkyMap<span>Карта Неба</span></div>
+  <div class="logo">Cosmos Map<span>Карта Неба</span></div>
   <div id="datetime">
     <span class="time-big" id="clock">00:00:00</span>
     <span id="date-str">—</span><br>
@@ -456,7 +456,7 @@
 
 <div id="permission-overlay">
   <div style="font-size:48px">🔭</div>
-  <h2>SkyMap</h2>
+  <h2>Cosmos Map</h2>
   <p>Интерактивная карта звёздного неба в реальном времени</p>
   <button class="perm-btn" onclick="startWithLocation()">📍 Использовать моё местоположение</button>
   <button class="perm-btn perm-skip" onclick="startWithoutLocation()">Без геолокации (Москва)</button>
@@ -1577,7 +1577,7 @@ function startApp() {
 // ============================================================
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/skymap/sw.js')
+    navigator.serviceWorker.register('/map/sw.js')
       .then(reg => console.log('SW registered:', reg.scope))
       .catch(err => console.log('SW error:', err));
   });
