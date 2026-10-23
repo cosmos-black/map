@@ -1,9 +1,9 @@
 {
-  "name": "SkyMap — Карта Неба",
-  "short_name": "SkyMap",
+  "name": "Cosmos Map",
+  "short_name": "Cosmos Map",
   "description": "Интерактивная карта звёздного неба с AR-режимом. Планеты, звёзды и созвездия в реальном времени.",
-  "start_url": "/skymap/",
-  "scope": "/skymap/",
+  "start_url": "/map/",
+  "scope": "/map/",
   "display": "fullscreen",
   "orientation": "portrait-primary",
   "background_color": "#03060f",
